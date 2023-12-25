@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BOOKEAT</title>
+    <!-- Styles for Glide.js -->
+
+</head>
+
+<body>
+    <!-- component -->
+    <!-- component -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- navbar -->
+    <header class="absolute inset-x-0 top-0 z-50 py-6">
+        <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+            <nav class="w-full flex justify-between gap-6 relative">
+                <!-- logo -->
+                <div class="min-w-max inline-flex relative">
+                    <a href="/" class="relative flex items-center gap-3">
+                        <div class="relative w-200 h-24 overflow-hidden flex rounded-xl">
+
+                            <img src="./assets/logo.png">
+                        </div>
+                        <div class="inline-flex text-lg font-semibold text-gray-900 ">
+                            BOOKEAT
+                        </div>
+                    </a>
+                </div>
+
+                <div data-nav-overlay aria-hidden="true"
+                    class="fixed hidden inset-0 lg:!hidden bg-gray-800/60 bg-opacity-50 backdrop-filter backdrop-blur-xl">
+                </div>
+                <div data-navbar
+                    class="flex invisible opacity-0  translate-y-10 overflow-hidden lg:visible lg:opacity-100  lg:-translate-y-0 lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-white lg:!bg-transparent border-x border-x-gray-100 lg:border-x-0">
+                    <ul
+                        class="border-t border-gray-100  lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-gray-700 w-full lg:justify-center lg:items-center">
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="duration-300 font-medium ease-linear hover:text-blue-600 py-3">
+                                Contact us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <div
+                        class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-gray-100   lg:border-0 px-6 lg:px-0">
+                        <a href="#"
+                            class="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+            after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#50BEF2] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
+                            <span class="relative z-10 text-white">
+                                Get StartedGGG
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="min-w-max flex items-center gap-x-3">
+
+                    <button data-toggle-navbar data-is-open="false"
+                        class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative">
+                        <span id="line-1"
+                            class="w-6 h-0.5 rounded-full bg-gray-700 transition-all duration-300 ease-linear"></span>
+                        <span id="line-2"
+                            class="w-6 origin-center  mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
+                        <span id="line-3"
+                            class="w-6 mt-1 h-0.5 rounded-ful bg-gray-700 transition-all duration-300 ease-linear"></span>
+                        <span class="sr-only">togglenav</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="relative py-32 lg:py-36 bg-white mt-20">
+        <div
+            class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
+            <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
+                <span
+                    class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+                <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-blue-600 blur-xl opacity-80"></span>
+            </div>
+            <span
+                class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+            <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+    lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+
+                <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl
+    font-bold text-gray-900">
+                    Selamat Datang di <span
+                        class="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 from-40% via-blue-500 via-30% to-green-300">Bookeat!</span>
+                    is the Best Ever.
+                </h1>
+                <p class="mt-8 text-gray-700">
+                    Rasakan Kenikmatan Pesan Makanan dengan Mudah,
+                    Pesan, Santap, Nikmati - Semua Hanya dalam Genggamanmu dengan Bookeat.
+                </p>
+                <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
+                    <div class="flex sm:flex-row flex-col gap-5 w-full">
+                        <div class="">
+                            <div class=" flex gap-6">
+                                <div
+                                    class="w-auto h-auto bg-white shadow-2xl  px-6 py-2 font-medium flex text-center items-center ">
+                                    <img src="./assets/apple.png" class="w-12 h-12" alt="">
+                                    <span> App Store</span>
+
+                                </div>
+                                <div
+                                    class=" bg-blue-600 text-white px-6 py-2 font-medium text-center items-center flex gap-2">
+                                    <img src="./assets/playstore.png " class="w-7 h-7 " alt="">
+                                    <span>Play Store</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+                <img src="./assets/food.jpg" alt="Hero image" width="2350" height="2390"
+                    class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- section about -->
+    <section class="flex items-center py-10 bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
+        <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+            <div class="flex flex-wrap ">
+                <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+                    <div class="relative ">
+
+                        <a href="https://youtu.be/I1SJ7MXGlO8?si=GsgjTlfYTd2f3EWT">
+                            <video controls autoplay class="absolute inset-0 w-full h-full">
+                                <source src="https://www.youtube.com/embed/I1SJ7MXGlO8?rel=0" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <img src="./assets/apps.jpg" alt="Deskripsi Gambar"
+                                class="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded">
+                        </a>
+                        <div
+                            class="absolute z-10 hidden w-full h-full bg-blue-400 rounded-bl-[80px] rounded -bottom-6 right-6 lg:block">
+                        </div>
+                        <div
+                            class="absolute z-50 text-blue-400 transform -translate-y-1/2 cursor-pointer top-1/2 left-[46%] hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="w-14 h-14 bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+                    <div class="relative">
+                        <h1
+                            class="absolute -top-20   left-0 text-[20px] lg:text-[100px] text-gray-900 font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+                            About Us
+                        </h1>
+                        <h1 class="pl-2 text-3xl font-bold border-l-8 border-blue-400 md:text-5xl dark:text-white">
+                            Welcome to our site
+                        </h1>
+                    </div>
+                    <p class="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
+                        elamat datang di Bookeat, tempat di mana kami merangkul kecintaan akan makanan dan memberikan
+                        pengalaman pesan makanan yang tak terlupakan. Dengan komitmen kepada kualitas dan kreativitas,
+                        kami hadir untuk menjembatani Anda dengan dunia kuliner yang luas dan menawarkan kemudahan dalam
+                        setiap pesanan. Tim kami yang bersemangat dan beraneka latar belakang bekerja bersama untuk
+                        menciptakan platform yang menggabungkan kepraktisan teknologi modern dengan kehangatan
+                        kebersamaan saat menikmati hidangan favorit Anda. Di Bookeat, kami percaya bahwa makanan adalah
+                        lebih dari sekadar nutrisi; itu adalah pengalaman yang merangkul keanekaragaman selera dan
+                        menyatukan orang. Terima kasih telah memilih Bookeat sebagai teman setia dalam perjalanan
+                        kuliner Anda. Mari bersama-sama menjelajahi kelezatan yang tak terbatas!
+                    </p>
+                    <a href="#"
+                        class="px-4 py-3 text-gray-50 transition-all transform bg-blue-400 rounded-[80px] hover:bg-blue-500 dark:hover:text-gray-100 dark:text-gray-100 ">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section abotu -->
+
+    <!-- section our mission  -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">How It Works</h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where
+                    technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            </div>
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div>
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900 text-white">
+                        <img src="./assets/choose.png" alt="" class="text-white">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">CHOOSE</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate seamlessly
+                        with all the organization and hit your marketing goals every month with our marketing plan.</p>
+                </div>
+                <div>
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                       <img src="./assets/checkout.png" alt="">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">PLACE AN ORDER</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Protect your organization, devices and stay compliant
+                        with our structured workflows and custom permissions made for you.</p>
+                </div>
+                <div>
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                      <img src="./assets/delivery-man.png" alt="">
+                    </div>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">PICK UP</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more.
+                        Now power up with hundreds of new templates to help you get started.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir section our mission  -->
+
+    <!-- section pengguna  -->
+    <div class="bg-white  mt-36 mb-20">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <div class="max-w-screen-md mb-20 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Join With Us </h2>
+                <p class="text-gray-500 sm:text-xl dark:text-gray-400">Gabunglah dengan kami sebagai mitra sponsor untuk Bookeat Apps! Bersama-sama, kita dapat menciptakan pengalaman kuliner yang tak terlupakan, memberikan nilai tambah kepada pelanggan, dan membangun hubungan yang langgeng. Dengan menjadi sponsor Bookeat, Anda akan turut serta dalam menghadirkan inovasi di dunia pesan makanan, memperluas jangkauan bisnis, dan mendukung perkembangan industri kuliner. Mari menjadi bagian dari perjalanan kuliner yang membahagiakan – jadilah sponsor kami di Bookeat Apps!.</p>
+            </div>
+            <!-- Slides -->
+            <div class="glide-09  max-w-full overflow-hidden">
+                <!-- Slides -->
+                <div data-glide-el="track" class="max-w-screen-xl mx-auto">
+                    <ul class="whitespace-no-wrap flex-no-wrap relative flex w-full overflow-hidden p-0 pb-12 glide__slides">
+                        <div class=" border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-1.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+
+                        <div class="border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-2.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+                        <div class="border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-3.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+                       
+                        <div class="border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-4.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+                        <div class="border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-4.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+                        <div class="border rounded-2xl shadow-xl">
+                            <li class="glide__slide">
+                                <img src="https://Tailwindmix.b-cdn.net/carousel/logos/carousel-logo-image-4.svg" class="w-auto h-20 max-w-full max-h-full m-auto" />
+                            </li>
+                        </div>
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- akhir sectio pengguna -->
+
+    <!-- awal footer -->
+    <!-- component -->
+<!-- This is an example component -->
+<div class=" bg-gray-900">
+    <div class="max-w-2xl mx-auto text-white py-10">
+        <div class="text-center">
+            <h3 class="text-3xl mb-3"> Download our Bookeat app </h3>
+            <p> Stay fit. All day, every day. </p>
+            <div class="flex justify-center my-10">
+                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8">
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Google Play Store </p>
+                    </div>
+                </div>
+                <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8">
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download on </p>
+                        <p class="text-sm md:text-base"> Apple Store </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+            <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Beautiful Footer, 2021. </p>
+            <div class="order-1 md:order-2">
+                <span class="px-2">About us</span>
+                <span class="px-2 border-l">Contact us</span>
+                <span class="px-2 border-l">Privacy Policy</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- akhir footer -->
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-1 {
+            transform: translateY(0.375rem) rotate(40deg);
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-2 {
+            transform: scaleX(0);
+            opacity: 0;
+        }
+
+        button[data-toggle-navbar][data-is-open="true"] #line-3 {
+            transform: translateY(-0.375rem) rotate(-40deg);
+        }
+    </style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+<script>
+    var glide09 = new Glide('.glide-09', {
+        type: 'carousel',
+        autoplay: 1,
+        animationDuration: 4500,
+        animationTimingFunc: 'linear',
+        perView: 3,
+        classes: {
+            activeNav: '[&>*]:bg-slate-700',
+        },
+        breakpoints: {
+            1024: {
+                perView: 2
+            },
+            640: {
+                perView: 1,
+                gap: 36
+            }
+        },
+    });
+
+    glide09.mount();
+</script>
+    <script>
+        const btnHumb = document.querySelector("[data-toggle-navbar]")
+        const navbar = document.querySelector("[data-navbar]")
+        const overlay = document.querySelector("[data-nav-overlay]")
+        if (btnHumb && navbar) {
+            const toggleBtnAttr = () => {
+                const isOpen = btnHumb.getAttribute("data-is-open")
+                btnHumb.setAttribute("data-is-open", isOpen === "true" ? "false" : "true")
+                if (isOpen === "false") {
+                    overlay.classList.toggle("hidden")
+                } else {
+                    overlay.classList.add("hidden")
+                }
+            }
+            btnHumb.addEventListener("click", () => {
+                navbar.classList.toggle("invisible")
+                navbar.classList.toggle("opacity-0")
+                navbar.classList.toggle("translate-y-10")
+                toggleBtnAttr()
+            })
+
+            overlay.addEventListener("click", () => {
+                navbar.classList.add("invisible")
+                navbar.classList.add("opacity-0")
+                navbar.classList.add("translate-y-10")
+                toggleBtnAttr()
+            })
+        }
+
+    </script>
+</body>
+
+</html>
